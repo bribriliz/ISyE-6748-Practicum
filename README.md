@@ -1,2 +1,7 @@
 # ISyE-6748-Practicum
 U.S. Dept. of Veterans Affairs - Visualization and Optimization of VA Resources
+
+In FY22, the veteran population of the United States reached 16.5 million; approximately 6.4\% of the population. It is our country's duty to provide the proper resources to our veterans in return for all they have done to serve our country. Thus, it is imperative to have the capability to visualize where our veterans as well as VA health facilities are distributed throughout the country. The U.S. Department of Veterans Affairs tracks annual veteran population and VA health facility data at the county and state levels. This information can then provide insights on where VA services are needed the most - and be used to optimize the distribution of VA resources.
+
+
+In this study, the business problem is defined as follows: which U.S. States should consider building additional VA health facilities? For these states, where should the new facility be added such that the maximum distance from each of the state counties is minimized? To answer this problem, a "preferred ratio", calculated from expenditure and facility data, was used as the basis for determining which states to consider. County centroid latitude and longitude data was used to formulate the model. Then, convex optimization using CVXPY in Python was used to calculate the Optimal Facility Location (OFL) for each state of interest. 
